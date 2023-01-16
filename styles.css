@@ -1,0 +1,190 @@
+
+body {
+    text-align: center;
+    font-family: Helvetica, monospace;
+    background-color: rgb(206, 197, 212);
+}
+
+header {
+    margin: 3%;
+    border-bottom: 3px solid rgb(166, 159, 171);
+    border-top: 3px solid rgb(166, 159, 171);
+}
+
+nav {
+    background-color: rgba(239, 236, 240, 0.748) ;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+main {
+    margin: 3%;
+}
+
+td {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:  rgba(249, 246, 249, 0.748);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.search-bar {
+    border: 1px solid black;
+    margin-top: 1pc;
+    margin: 3%;
+    padding: 1pc;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(239, 236, 240, 0.748);
+    border-radius: 10px;
+}
+
+section.result {
+    background-color: rgba(239, 236, 240, 0.748);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1pc;
+    align-content: center;
+    height: 700px;
+    width: 700px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+section#glossary{
+    margin: 3%;
+    background-color: rgba(239, 236, 240, 0.748);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1pc;
+
+}
+
+section.random{
+    border: 1px solid black;
+    margin: 3%;
+    padding: 1pc;
+    border: 1px solid black;
+    background-color: rgba(239, 236, 240, 0.748);
+    border-radius: 10px;
+
+}
+
+.meme-result {
+    border: 1px solid black;    
+    padding: 1pc;
+    margin: 3%;
+}
+
+
+
+/* NAV BAR  */
+        #search-nav {
+            border-radius: 1pc #000;
+            border: 1p #000;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+                #search-nav:hover{
+                    box-shadow: 1px 1px 1px 2px rgb(166, 159, 171) ;
+                }
+               
+        #random-nav {
+            border-radius: 1pc #000;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+                #random-nav:hover{
+                    box-shadow: 1px 1px 1px 1px rgb(166, 159, 171) ;
+                }
+
+        #glossary-nav{
+            border-radius: 1pc #000;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+                #glossary-nav:hover{
+                    box-shadow: 1px 1px 1px 1px rgb(166, 159, 171) ;
+                }
+
+#search{
+    border-radius: 50pc;
+    border-style: none;
+    width: 40%;
+    height: 2pc;
+    text-align: center;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+}
+
+#search-button{
+    border-radius: 30pc;
+    border-style: none;
+    width: 10%;
+    height: 25px;
+}
+#search-button:hover{
+    box-shadow: 1px 1px 1px 1px rgb(166, 159, 171) ;
+}
+
+
+#random {
+    border-radius: 50pc;
+    border-style: none;
+    width: 40%;
+    height: 2pc;
+    text-align: center;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+}
+
+#random-button{
+    margin-top: 10px;
+    border-radius: 30pc;
+    border-style: none;
+    width: 10%;
+    height: 25px;
+}
+#random-button:hover{
+    box-shadow: 1px 1px 1px 1px rgb(166, 159, 171) ;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES
+When the images loaded they were all different dimentions and sometimes went off the screen.
+This is a media query that makes all the images that are output the same size and are visible
+*/
+@media (min-width: 600px) {
+    .meme-image {
+      width: 600px;
+      height: 600px;
+    }
+  }
+  
+  @media (max-width: 599px) {
+    .meme-image {
+      width: 300px;
+      height: 300px;
+    }
+  }
