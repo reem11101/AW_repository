@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<head>
-    <meta charset="UTF-8">
-    <title>Meme Maker</title>
-    <script src="app.js"></script>
-    <link href="styles.css" rel="stylesheet">
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Meme Maker</title>
+        <script src="app.js"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
 
     <header>
         <h1>Meme Search Engine </h1>
     </header>
     <section id="top"></section>
-<!-- 
+    <!-- 
     Nav Bar that navigates to the different sections also using tab button for accessability
  -->
     <nav>
@@ -21,54 +23,52 @@
             <li id="random-nav"><a href="#random" id="random"> Random Generator</a></li>
             <li id="glossary-nav"><a href="#glossary" id="glossary-section"> Meme Glossary</a></li>
         </ul>
-    </nav>          
-   
+    </nav>
+
     <main>
-       <!--Search Bar--> 
+        <!--Search Bar-->
         <section class="search-bar">
             <h3 id="title"> Search</h3>
-            <br>
-                <p1 id="desc-search"> This sections is for searching a meme you want to find, 
-                to find a meme name to search check the glossary section. </p1>
-            <br>
-<!--        Search bar input  -->
+            <p> This sections is for searching a meme you want to find,
+                to find a meme name to search check the glossary section. </p>
+            <!--        Search bar input  -->
             <input type="search" id="search" data-search />
-            <br>
             <!-- button that triggers the request function to the Meme API -->
             <button id="search-button">Search</button>
         </section>
-        
-<!--    Random generator -->
-       <section class="random">
-        <h3 id="title"> Random </h3>
-            <br>     
-                <p1 id="desc-random"> If you have no particular meme you wish to find, 
-                generate one randomly as a surprise. </p1>
-            <br>
-            <button id="random-button">Generate</button>
-        </section> 
 
-<!--    Image Output Section -->
+        <!--    Random generator -->
+        <section class="random">
+            <h3 id="title"> Random </h3>
+            <p id="desc-random"> If you have no particular meme you wish to find,
+                generate one randomly as a surprise. </p>
+            <button id="random-button">Generate</button>
+        </section>
+
+        <!--    Image Output Section -->
         <section class="result">
             <h3 id="title"> Selected Meme</h3>
             <h1 id="name"></h1>
             <img id="image">
-        </section>  
+        </section>
 
-<!--    Glossary Section for all the memes in the API -->
+        <!--    Glossary Section for all the memes in the API -->
         <section id="glossary">
             <h3 id="title"> Glossary</h3>
-                <table id="table">
-                    <tbody id="glossary-table"></tbody>
-                </table>
+            <table id="table">
+                <tbody id="glossary-table"></tbody>
+            </table>
         </section>
     </main>
 
-<footer>
+    <footer>
 
-    API used https://api.imgflip.com/get_memes
-    
-</footer>  
+        API used https://api.imgflip.com/get_memes
+
+    </footer>
+
+
+
 </body>
+
 </html>
-  
