@@ -39,6 +39,11 @@ a {
     color: #000;
 }
 
+#image[alt] {
+    display: none;
+}
+
+
 section.search-bar {
     border: 1px solid black;
     margin-top: 1pc;
@@ -167,11 +172,6 @@ section.random {
 #random-button:hover {
     box-shadow: 1px 1px 1px 1px rgb(166, 159, 171);
 }
-
-
-
-
-
 
 
 
