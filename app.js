@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (button) {
         button.addEventListener("click", request);
 
+        // $.getJSON('https://api.imgflip.com/get_memes', function(data) {
+        //     var options = '';
+        //     for (var i = 0; i < data.length; i++) {
+        //       options += '<option value="' + data[i].value + '">' + data[i].label + '</option>';
+        //     }
+        //     $('#dropdown').html(options);
+        //   });
+          
+
         // Event listener for the Random function to get a Random meme
         const randomButton = document.getElementById("random-button");
         if (randomButton) {
@@ -47,8 +56,7 @@ function request() {
 
                 else {
                     alert("Meme not found. Please try again.");
-                }
-            }
+                }}
         })
         .catch(error => {
             console.log("An error occurred: ", error);
